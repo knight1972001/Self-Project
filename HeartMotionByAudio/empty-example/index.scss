@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900|Montez);
+
+$buttonBackground: #2c3e50;
+$buttonColor: rgba(255,255,255,1);
+
+.sparkley {
+
+  background: lighten( $buttonBackground , 10% );
+  color: $buttonColor;
+  border: none;
+
+  padding: 16px 36px;
+  font-weight: normal;
+  
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  
+  box-shadow: 0 38px 32px -23px black;
+  margin: 0 1em 1em;
+
+  &:hover {
+   
+    background: $buttonBackground;
+    color: transparentize( $buttonColor,0.8 );
+    
+  }
+  
+}
+
+html  {
+  
+  font-family: Lato;
+  font-weight: 200;
+  font-size: 1em;
+  text-align: center;
+  color: #ddd;
+  
+  min-height: 100%;
+
+  // awesome background from: https://codepen.io/bosscause/pen/BkxbC <3
+  
+  background: #000000;
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(0, 0, 0, 0.22) 10%,rgba(49, 30, 0, 0) 40%), -webkit-linear-gradient(top, rgba(54, 33, 0, 0.25) 0%,rgba(78, 37, 0, 0.4) 100%), -webkit-linear-gradient(-45deg, #160000 0%,#1f1100 100%);
+  
+  body { 
+    overflow: hidden; /* Hide scrollbars */
+    padding: 50px;
+  }
+
+}
+
+h1,h2,h3 { 
+  
+  span { 
+    font-family: Montez; 
+    font-size: 1.9em; 
+    font-weight: 300; 
+    margin: 0 0.3em; 
+    color: #ff0080; 
+  }
+  
+}
+
+h1 { 
+  font-size: 1.9em; 
+  width: 900px; 
+  margin: 0 auto 1em; 
+  text-shadow: 0 2px 1px black;
+}
+
+.img {
+
+  margin: 40px auto 0;
+  width: 500px;
+  display: block;
+  
+  img { 
+    width: 100%; 
+    border-radius: 5px;
+  }
+
+}
+
+p {
+
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 10px auto;
+
+}
+
+
+/////////////////////@at-root
+
+  #dot {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 141, 118);
+    border-radius: 50%;
+    display: inline-block;
+    scale: 100%;
+    transition: scale 0.01s;
+  }
+
+.spark {
+    background-color: #DE4A00;
+    font-family: 'Helvetica', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgb(171, 0, 11);
+}
+
+// canvas {
+//     visibility: hidden;
+// }
+
+#defaultCanvas0{
+    visibility: hidden;
+}
+
+#heart{
+    position: absolute;
+    left: 42%;
+}
+i{
+    color: #000;
+    font-size:300px;
+    text-shadow:0 0 20px rgb(222, 74, 0, 0.4), 0 0 90px rgb(171, 0, 11);
+}
+
+#click-text{
+    text-align:center;
+    position: relative;
+    top: 30%;
+    left: 47.8%;
+    top: 5;
+}
